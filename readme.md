@@ -4,7 +4,7 @@
 
 ## Check the live link.
 
-[Product](https://monstera-hero-section.vercel.app/)
+[Product](https://product-hero-section.vercel.app/)
 
 ![badge](https://img.shields.io/badge/Vercel-Vercel-green)
  
