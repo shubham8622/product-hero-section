@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+.open-nav-mobile{
+    display: none;
+}
+.container {
+    width: min(90%,80rem);
+    margin-inline: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+.nav-items h5 {
+    font-size: 1.1rem;
+}
+.logo{
+    width: 10rem;
+}
+.cart{
+    width:20rem;
+}
+.logo img,
+.cart img{
+    max-width: 100%;
+}
+.cart {
+    width: 19rem;
+}
+.nav-items h5 {font-size: 1.1rem;}
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.left-section {
+    padding-top: 10rem;
+}
+.left-section h3 {
+    font-size: 2rem;
+}
+
+h3 img {
+    max-width: 3rem;
+}
+
+.left-section h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.sub-headlines h5 {
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sub-headlines img {
+    background: #f35f2e;
+    background: #fe5e35;
+    color: #ffffff;
+    padding: 0.3rem;
+    border-radius: 5rem;
+    max-width: 1.5rem;
+}
+.sub-headlines {
+    line-height: 2.5rem;
+    margin-top: 1rem;
+
+}
+
+p.text {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    color: darkgrey;
+}
+
+.action-btns {
+    margin-top: 2rem;
+}
+
+button.action-btn {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: #fe5e35;
+    color: #ffffff;
+    font-weight: 600;
+}
+.headphone-div {
+    position: relative;
+    width: 100%;
+}
+img.head-phone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+}
+.right-section {
+    position: relative;
+    width: 65rem;
+}
+img.discount {
+    position: absolute;
+    z-index: 1;
+    top: 18rem;
+    left: -3rem;
+    max-width: 10rem;
+}
+.discount-content {
+    position: absolute;
+    z-index: 2;
+    top: 21.5rem;
+    color: #ffffff;
+}
+.dots {
+    position: absolute;
+    top: 30rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    gap: 1rem;
+    left: 11.2rem;
+}
+.dot {
+    padding: 1rem;
+    background: green;
+    border-radius: 10rem;
+}
+.yellow-dot{
+    background-color: yellow;
+}
+.tomato-dot{
+    background-color:orangered;
+}
+.black-dot{
+    background-color: #000000;
+}
+.right-section button.action-btn {
+    position: absolute;
+    top: 34rem;
+    left: 10.5rem;
+}
+
+@media only screen and (max-width:1024px){
+    :root{
+        font-size: 13px;
+    }
+    .left-section {
+        padding-top: 7rem;
+    }
+    img.discount {
+        top: 16rem;
+    }
+    .discount-content {
+        top: 19rem;
+    }
+    .dots {
+        top: 27rem;
+        left: 9.2rem;
+    }
+    .right-section button.action-btn {
+        top: 31rem;
+        left: 8.5rem;
+    }    
+
+}
+
+@media only screen and (max-width:768px){
+    :root{
+        font-size: 11px;
+    }
+    .cart,
+    .nav-items{
+        display: none;
+    }
+    .open-nav-mobile{
+        display: block;
+    }
+    .left-section {
+        padding-top: 7rem;
+    }
+    img.discount {
+        top: 15rem;
+        max-width: 8rem;
+    }
+    .discount-content {
+        top: 17rem;
+        left: -1rem;
+    }
+    .dots {
+        top: 24rem;
+        left: 7.2rem;
+    }
+    .right-section button.action-btn {
+        top: 31rem;
+        left: 6rem;    
+    }  
+
+}
+
+@media only screen and (max-width:426px){
+    :root{
+        font-size: 9px;
+    }
+    .intro-section {
+        flex-direction: column;
+    }
+    .left-section {
+        padding-top: 4rem;
+        text-align: center;
+    }
+    .right-section {
+        width: 30rem;
+    }
+    img.head-phone {
+        left: 60px;
+    }
+    img.discount {
+        top: 18rem;
+        left: 40px;
+    }
+    .discount-content {
+        top: 20rem;
+        left: 6.5rem;
+    }
+    .dots {
+        top: 29rem;
+        left: 17.2rem;
+    }
+    .right-section button.action-btn {
+        top: 32rem;
+        left: 14.5rem;
+    }
+}
+
+@media only screen and (max-width:376px){
+    img.head-phone {
+        left: 35px;
+    }
+    img.discount {
+        left: 20px;
+    }
+    .discount-content {
+        left: 4.5rem;
+    }
+    .dots {
+        left: 14.5rem;
+        top: 30rem;
+    }    
+    .right-section button.action-btn {
+        left: 12.5rem;
+        top: 35rem;
+    }
+}
